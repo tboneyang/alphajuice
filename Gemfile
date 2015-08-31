@@ -8,7 +8,12 @@ gem 'autoprefixer-rails'
 gem 'pusher'
 
 #mysql
-gem 'mysql2'
+#gem 'mysql2'
+#use postgres
+gem 'pg'
+
+#add unicorn
+gem 'unicorn'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.3'

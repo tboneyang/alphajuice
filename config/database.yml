@@ -5,24 +5,24 @@
 #   gem 'sqlite3'
 #
 default: &default
-  adapter: mysql2
+  adapter: postgresql
   pool: 5
   timeout: 5000
 
 development:
   <<: *default
-  database: alphasales
-  username: root
-  password:
+  database: aj_development
+  username: rails
+  password: w0Wvwv0EW0
   host: localhost
-  socket: /tmp/mysql.sock
+
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: alphatests
+  database: aj_test
 
 production:
   <<: *default
-  database: db/alphaproductions
+  database: aj_production
