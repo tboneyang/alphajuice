@@ -1,0 +1,22 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: bob
+  quantity: 1
+  city: troy
+  country: China
+
+two:
+  name: tom
+  quantity: 2
+  city: boston
+  country: USA
+
+
+<% 100.times do |n| %>
+sale_<%= n %>:
+  name: <%= "user#{n}" %>
+  quantity: <%= n %>
+  city: <%= "user#{n}ville" %>
+  country: <%= "user#{n}ofAmerica" %>
+<% end %>

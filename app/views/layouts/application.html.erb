@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Wundersite</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <script src="//js.pusher.com/2.2/pusher.min.js"></script>
+
+</head>
+<body>
+
+  <div id="wrapper">
+  <div id="stickyheader">
+    <%= render 'layouts/header' %>
+  </div>
+    <%= yield %>
+  </div>
+  <div id="stickyfooter">
+  <%= render 'layouts/footer' %>
+  </div>
+</body>
+</html>

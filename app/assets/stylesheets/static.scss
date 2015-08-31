@@ -1,0 +1,135 @@
+// Place all the styles related to the static controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.homebg{
+  z-index:-1;
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+
+  img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    min-width: 50%;
+    min-height: 50%;
+    //opacity: 0.8;
+  }
+}
+
+.exploreb{
+  position: absolute;
+  text-align:center;
+  width:100%;
+  bottom:0;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  background: rgba(10, 10, 10, 0.5);
+  a{
+    transition: color 0.3s ease-out;
+    color:#ccc;
+    text-decoration: none;
+    font-size:1.3em;
+  }
+  a:hover{
+    background:none;
+    color:white;
+  }
+
+}
+
+.homemessagebox{
+  position:absolute;
+  width:60%;
+  height:140px;
+  margin:auto;
+  top:0;
+  left:0;
+  bottom:0;
+  right:0;
+  //border:1px solid white;
+  .centercontainer{
+    position:relative;
+    color:white;
+    text-align: center;
+
+    .maintitle{
+      font-size:5em;
+    }
+
+    .mainslogan{
+      font-size:1.5em;
+      line-height: 2.5em;
+
+    }
+
+    .mainbuttonbox{
+      padding-top:25px;
+
+      a{
+        font-size:14px;
+        padding:12px;
+        padding-left: 25px;
+        padding-right: 25px;
+        border-radius:2px;
+        background: rgba(255,255,255,0.3);
+        color:white;
+        text-decoration: none;
+      }
+      a:hover{
+        background: rgba(140,140,140,0.3);
+        text-decoration: none;
+        color:inherit;
+      }
+    }
+  }
+}
+
+#testimony{
+  text-align: center;
+  background:rgba(256, 256, 256, 1);
+  .topline{
+    border-top: 1px solid #ddd;
+    max-width: 1000px;
+    margin:auto;
+    //border-bottom: 1px solid #ddd;
+  }
+
+  .testimonybox{
+    padding-top: 60px;
+    padding-bottom: 70px;
+  }
+  h3{
+    padding-bottom: 30px;
+    font-weight: 100;
+  }
+
+  img{
+    border-radius: 100%;
+    border:1px solid black;
+    display:inline-block;
+    height:70px;
+    width:70px;
+  }
+  span{
+    padding:20px;
+    font-size:1.1em;
+    font-weight: lighter;
+    color:#444;
+  }
+}
+
+#livestats{
+  padding-top: 20px;
+  background:white;
+  color:black;
+  position:relative;
+  overflow: hidden;
+  text-align: center;
+}

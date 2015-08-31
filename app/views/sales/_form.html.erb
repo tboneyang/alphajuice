@@ -1,0 +1,66 @@
+<%= form_for(@sale) do |f| %>
+  <% if @sale.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@sale.errors.count, "error") %> prohibited this sale from being saved:</h2>
+
+      <ul>
+      <% @sale.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <label for="">First Name</label><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <label for="">Last Name</label><br>
+    <input type="text_field" name="name" value="">
+  </div>
+  <div class="field">
+    <label for="">Email</label><br>
+    <input type="text_field" name="name" value="">
+  </div>
+
+
+  <h4>Your Shipping Address</h4>
+
+  <div class="field">
+    <%= f.label :city %><br>
+    <%= f.text_field :city %>
+  </div>
+  <div class="field">
+    <%= f.label :country %><br>
+    <%= f.text_field :country %>
+  </div>
+  <input type="checkbox" name="name" value="kasjdla"> Billing Address same as shipping address.<br>
+
+
+  <h4>Your Payment Information</h4>
+  <div class="field">
+    <label for="">Name on Card</label><br>
+    <input type="text_field" name="name" value="">
+  </div>
+  <div class="field has-feedback">
+    <label for="">Card Number</label><br>
+    <input class="form-control" type="text_field" name="name" value=""><i class="form-control-feedback glyphicon glyphicon-credit-card"></i></input>
+  </div>
+
+  <h4>How Great Would You Like to Become?</h4>
+  <div class="field">
+    <%= f.label :quantity %> <br>
+    <%= f.number_field :quantity %><br>
+  </div>
+  <br>
+
+  <input type="checkbox" name="name" value="kasjdla"> I am over 21 years of age and insane enough to drink Alpha Juice<br>
+  <br>
+  <div class="actions">
+    <%= button_tag( :class => "finalorderb") do %>
+    <i class="glyphicon glyphicon-shopping-cart"></i> Purchase Alpha Juice
+  <% end %>
+  <a class="disclaimerb" href="/terms">Disclaimer</a>
+  </div>
+<% end %>

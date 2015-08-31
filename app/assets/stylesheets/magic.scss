@@ -1,0 +1,81 @@
+
+
+#magic{
+  position:relative;
+  margin-top:100vh;
+  background:white;
+
+  table{
+    tr{
+      td{
+        padding-top: 40px;
+        padding-bottom: 40px;
+
+        i{
+          font-size:4em;
+          //padding-left: 40px;
+        }
+      }
+
+    }
+  }
+}
+
+//nutrition section
+
+.nutritionbox{
+  padding-top: 70px;
+  text-align: center;
+
+  .warning{
+    color:red;
+  }
+
+  h5{
+
+    padding-bottom: 10px;
+    padding-top: 5px;
+  }
+  .grey1{
+    background:#ddd;
+  }
+  .grey2{
+    background:#999;
+  }
+  .grey3{
+    background:#555;
+  }
+  .grey4{
+    background:#111;
+  }
+
+  .nut{
+    font-size:1.2em;
+    padding-left: 0;
+    padding-top: 5px;
+    div{
+      padding-top:10px;
+      font-size: 0.7em;
+      padding-bottom: 10px;
+    }
+  }
+
+  .outernutbox{
+    padding:20px;
+    padding-bottom: 30px;
+
+    .innernut{
+      border:3px solid black;
+      border-radius: 3px;
+      padding:20px;
+      text-align: center;
+    }
+  }
+}
+
+//expectations section
+.expectationsbox{
+  padding-top: 60px;
+  padding-bottom: 10px;
+  text-align: center;
+}

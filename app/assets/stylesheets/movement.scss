@@ -1,0 +1,73 @@
+@keyframes movingnews{
+  0% {background-position: 0px 0px; }
+	100% { background-position: 800px 0px; }
+}
+
+.newsbox{
+  position:relative;
+  border-bottom: 1px solid #f9f9f9;
+  background: white;
+  height: 187px;
+
+  .fadednewsbox{
+    background-image: image-url("/allnews.png");
+    background-size: 800px;
+    background-position: 0px 0px;
+    background-repeat: repeat-x;
+    width:800px;
+    height: 100%;
+    margin:auto;
+    position:relative;
+    animation: movingnews 20s linear infinite;
+
+    .leftblur{
+      float:left;
+      width:100px;
+      height:100%;
+      background: linear-gradient(left, rgba(256, 256, 256, 1) 0%, rgba(256, 256, 256, 0) 100%);
+    }
+
+    .rightblur{
+      float:right;
+      width:100px;
+      height:100%;
+      background: linear-gradient(right, rgba(256, 256, 256, 1) 0%, rgba(256, 256, 256, 0) 100%);
+    }
+
+    .clear{
+      clear:both;
+    }
+  }
+}
+
+.smallwmap{
+  background-image: image-url("/worldmap.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  //opacity:0.1;
+  position:relative;
+
+  .wfilter{
+    background: rgba(256, 256, 256, 0.9);
+    height:100%;
+    padding-top: 40px;
+  }
+
+}
+
+
+  .bbuyb{
+  padding:12px;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-radius: 2px;
+  background: rgba(255,0,0,0.5);
+  color:white;
+  text-decoration: none;
+  transition: 0.9s linear;
+  }
+  .bbuyb:hover{
+    background: rgba(140,0,0,0.8);
+    text-decoration: none;
+    color:white;
+  }

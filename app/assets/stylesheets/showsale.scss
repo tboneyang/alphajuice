@@ -1,0 +1,52 @@
+.showsalebox{
+  position:relative;
+  height:100vh;
+  padding-top:100px;
+  i{
+  }
+  overflow: hidden;
+}
+
+
+.tquantity{
+  visibility: hidden;
+}
+
+.tweetbox{
+  border:1px solid black;
+
+  .tname{
+    font-weight: bold;
+  }
+  div{
+    padding-top:10px;
+    padding-left: 20px;
+    span{
+      //padding:20px;
+    }
+  }
+}
+
+#bottlespace{
+  border-top: 1px solid #ddd;
+  padding-bottom: 10px;
+  img{
+    height:50px;
+  }
+}
+
+.smcliff{
+  position:absolute;
+  bottom:-110px;
+  width:700px;
+  left:50%;
+  margin-left: -350px;
+  z-index: -10000;
+  overflow: hidden;
+}
+
+#congrats{
+  padding-bottom: 5px;
+  margin-left: 15px;
+  color:green;
+}

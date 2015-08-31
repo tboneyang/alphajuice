@@ -1,0 +1,51 @@
+<%= javascript_include_tag "createbottles" %>
+<div class="showsalebox">
+  <div class="topline">
+
+  </div>
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-6">
+        <h1>Welcome to the Pack</h1>
+        <br>
+        <div class="tweetbox">
+          <div class="row">
+            <div class="col-md-5">
+              <span class="tname"><%= @sale.name %></span>
+            </div>
+            <div class="col-md-4">
+
+              <span class="tcity"><%= @sale.city %> <i class="glyphicon glyphicon-map-marker"></i></span>
+            </div>
+            <div class="col-md-3">
+              <span class="tcountry"><%= @sale.country %></span>
+            </div>
+          <span class="tquantity"><%= @sale.quantity %></span>
+          </div>
+          <div id="bottlespace"></div>
+        </div>
+        </div>
+
+      <div class="col-md-6">
+        <h1 id="congrats">Congratulations  <i class="glyphicon glyphicon-ok"></i></h1>
+        <br>
+
+        <a href="/#magic" class="disclaimerb">Learn More</a>
+        <br>
+        <br>
+        <br>
+
+        <a href="/terms" class="disclaimerb">Disclaimer</a>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+      </div>
+    </div>
+
+
+  </div>
+  <img class="smcliff" src="/cliff.jpg" alt="" />
+</div>

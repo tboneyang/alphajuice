@@ -1,0 +1,54 @@
+.feedbox{
+  background:white;
+}
+
+.feedlogo{
+  height:50px;
+}
+
+  h1{
+    text-align: center;
+    padding-bottom: 50px;
+  }
+
+  .innerfeed{
+    height:450px;
+    border-bottom: none;
+    position:relative;
+    overflow: hidden;
+
+    .itquantity{
+      padding-left: 20px;
+      line-height: 2em;
+    }
+
+    .fadebottom{
+      height:70px;
+      width:100%;
+      position:absolute;
+      left:0px;
+      bottom:0px;
+      background: linear-gradient(bottom, rgba(256, 256, 256, 1) 0%, rgba(256, 256, 256, 0) 100%);
+
+    }
+  }
+
+
+  .tweetbox{
+    //margin-top: 10px;
+    padding-bottom: 10px;
+  }
+
+.whitetext{
+  a{
+    color:white;
+  }
+}
+.aligncenter{
+  text-align: center;
+
+  a{
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}

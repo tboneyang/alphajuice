@@ -1,0 +1,79 @@
+// Place all the styles related to the Sales controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.newsalebox{
+  padding-top:100px;
+  padding-bottom: 50px;
+  h4{
+    font-weight: 100;
+    margin-top:20px;
+    border-top: 1px solid #ddd;
+    padding-top:15px;
+    padding-bottom: 15px;
+  }
+
+
+  .finalorderb{
+    background:none;
+    border:1px solid black;
+    border-radius: 2px;
+    padding:10px;
+  }
+  .actions{
+    padding-top: 10px;
+  }
+
+}
+
+.topline{
+  border-top: 1px solid black;
+}
+
+.wface{
+  width:240px;
+  height:240px;
+  padding-right: 40px;
+}
+
+.centerimages{
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.disclaimerb{
+  margin-left: 15px;
+  padding:10px;
+  border:1px solid black;
+  border-radius: 2px;
+  //float:right;
+}
+.disclaimerb:hover{
+  background:none;
+  color:inherit;
+}
+
+
+
+.pricingpanel{
+  background: #333;
+  color:white;
+  padding:20px;
+
+  p{
+    color:red;
+  }
+
+  .strikedprice{
+    text-decoration: line-through;
+    padding-top: 50px;
+    //padding-bottom: 10px;
+    font-size: 1.4em;
+
+  }
+  .realprice{
+    font-size:2.4em;
+    padding-bottom: 50px;
+  }
+}

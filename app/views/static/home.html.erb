@@ -1,0 +1,262 @@
+<div class="homebg">
+  <img src="wolf.jpg" alt="" />
+</div>
+
+<div class="exploreb">
+  <a href="#magic">
+    Behind The Magic
+    <i class="glyphicon glyphicon-chevron-down"></i>
+  </a>
+</div>
+
+
+
+<div class="homemessagebox">
+  <div class="centercontainer">
+    <span class="maintitle">ALPHA JUICE</span><br>
+    <span class="mainslogan">Become alpha as f**k.</span>
+    <div class="mainbuttonbox">
+      <%= link_to 'Get Some', new_sale_path %>
+    </div>
+  </div>
+</div>
+
+<div id="magic">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2">
+      </div>
+
+    <div class="col-md-8">
+      <div class="nutritionbox">
+
+      <h1>Dangerously Unbalanced Nutrition.</h1>
+      <h5>Engineered to deliver unfathomable amounts of energy. </h5>
+      <h5 class="warning">
+        <i class="glyphicon glyphicon-alert "></i> 69.0% alcohol by volume.
+      </h5>
+      <div class="centerimages">
+        <img class="wface" src="/wolfface.jpg" alt="" />
+        <i class="glyphicon glyphicon-plus"></i>
+        <img src="/bottle.png" alt="" />
+      </div>
+
+
+      <div class="row">
+        <div class="col-md-2 grey2">
+          <br>
+          <br>
+          <br>
+        </div>
+        <div class="col-md-5 grey3">
+          <br>
+          <br>
+          <br>
+        </div>
+        <div class="col-md-5 grey4">
+          <br>
+          <br>
+          <br>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2 nut">
+          0.5L RedBull
+          <div>50% of DV</div>
+        </div>
+        <div class="col-md-5 nut">
+          300g Protein
+          <div>700% of DV</div>
+        </div>
+        <div class="col-md-5 nut">
+          300g Testosterone
+          <div>9120839123117823% of DV</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3 outernutbox">
+          <div class="innernut">
+            0g<br>
+            Vegetables
+          </div>
+        </div>
+        <div class="col-md-3 outernutbox">
+          <div class="innernut">
+            0g<br>
+            Fiber
+          </div>
+
+        </div>
+        <div class="col-md-3 outernutbox">
+          <div class="innernut">
+            700g<br>
+            Trans Fat
+          </div>
+
+        </div>
+        <div class="col-md-3 outernutbox">
+          <div class="innernut">
+            900g<br>
+            Cholesterol
+          </div>
+
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="col-md-2">
+    </div>
+    </div>
+    <div class="row">
+      <div class="expectationsbox">
+      </div>
+    </div>
+
+
+
+    <div class="row">
+      <div class="col-md-2">
+      </div>
+      <div class="col-md-8">
+
+      </div>
+      <div class="col-md-2">
+      </div>
+    </div>
+
+
+
+  </div>
+</div>
+
+
+<div id="testimony">
+  <div class="container">
+  <div class="topline">
+    <div class="testimonybox">
+      <h3 id="testimonyslogan">"No one buys Viagra anymore. I'm bankrupt. Literally."</h3>
+      <img id="testimonypic" src="ceo.jpg" alt="" />
+      <span id="testimonybio">Ian Read, CEO, Pzifer</span>
+    </div>
+</div>
+</div>
+</div>
+
+
+
+  <div class="newsbox">
+    <div class="fadednewsbox">
+      <div class="leftblur">
+      </div>
+      <div class="rightblur">
+        <div class="clear">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </div>
+
+<div id="livestats">
+<div class="container">
+
+  <div class="row">
+
+          <div class="col-md-12">
+            <h3>Alpha Juice is no "beverage." It is a global phenomenon.</h3>
+            <br>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-3">
+              <h4> <span id="livesale"><%= @sales.length %></span> <br><br> Purchased</h1>
+            </div>
+            <div class="col-sm-3">
+              <h4><span id="liveship"><%= @sales.length/2 %></span> <br><br> Shipped <i class="glyphicon glyphicon-plane"></i></h1>
+            </div>
+            <div class="col-sm-3"></div>
+          </div>
+
+  </div>
+
+
+
+</div>
+</div>
+
+<div class="feedbox">
+  <div class="container">
+    <div class="row">
+      <div class="smallwmap">
+        <div class="row wfilter">
+
+      <div class="col-md-3">
+
+      </div>
+      <div class="col-md-6 ">
+        <div class="innerfeed">
+
+
+        <div id="feedtable">
+            <% @lim.reverse_each do |sale| %>
+
+
+                <div class="tweetbox">
+                  <div class="row">
+
+                    <div class="col-md-3">
+                      <span class="tname"><%= sale.name %></span>
+                    </div>
+                    <div class="col-md-3">
+                      <span class="itquantity"><%= sale.quantity %><i class="glyphicon glyphicon-glass"></i></span>
+                    </div>
+
+                    <div class="col-md-3">
+                      <span class="tcity"><%= sale.city %> <i class="glyphicon glyphicon-map-marker"></i></span>
+                    </div>
+
+                    <div class="col-md-3">
+                      <span class="tcountry"><%= sale.country %></span>
+                    </div>
+
+
+                  </div>
+                </div>
+            <% end %>
+        </div>
+
+        <div class="fadebottom">
+
+        </div>
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="aligncenter">
+          <a class="disclaimerb" href="/#magic">Learn More</a>
+
+          <span class="whitetext">
+            <%= link_to 'Get Some', new_sale_path, class: "bbuyb" %>
+          </span>
+
+          <a class="disclaimerb" href="/terms">Disclaimer</a>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+      </div>
+      <div class="col-md-3">
+
+      </div>
+    </div>
+    </div>
+
+    </div>
+  </div>
+</div>
